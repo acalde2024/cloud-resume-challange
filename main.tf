@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "static-online-site" {
-  bucket = var.my_bucket_name.id
+  bucket = var.my_bucket_name
 }
 
 resource "aws_s3_bucket_ownership_controls" "static" {
