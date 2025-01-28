@@ -1,5 +1,5 @@
 variable "my_bucket_name" {
-  description = "antonioaws-journey.com"
+  description = "My bucket name"
   type        = string
-  default     = "tf-bucket"
+  default     = "antonioaws-journey.com"
 }
