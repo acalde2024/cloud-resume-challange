@@ -1,12 +1,4 @@
 terraform {
-  backend "s3" {
-    bucket         = "tf-backend-antonioaws-journey.com"
-    key            = "dev/terraform.tfstate"
-    region         = "us-east-2"
-    dynamodb_table = "tf-backend-antonioaws-journey.com"
-    encrypt        = true
-    
-  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
