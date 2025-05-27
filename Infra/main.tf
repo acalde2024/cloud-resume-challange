@@ -50,6 +50,12 @@ resource "aws_s3_bucket_policy" "allow-static" {
   )
 }
 
+
+module "template_files" {
+  source   = "hashicorp/dir/template"
+  base_dir = "${path.module}/website"
+}
+
 resource "aws_s3_bucket_website_configuration" "web-conf" {
   bucket = aws_s3_bucket.static-online-site.id
 
